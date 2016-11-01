@@ -1,13 +1,15 @@
 # TRABALHO 01
-Trabalho desenvolvido durante a disciplina de BD
+Trabalho BD1
 
 #Sumário
 
 ###1	COMPONENTES<br>
-Integrantes do grupo<br>
+Pedro Henrique<br>
+Romildo Costa<br>
 
 ###2	INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
+O objetivo do nosso sistema e realizar crawling o site de classificados (OLX, ZAP e etc) para extração de informações de imóveis (bairro, município, valor e etc.) e veículos (bairro, município, valor, modelo, ano e etc.) disponibilizando para usuário varios filtro de informações históricas com maior facilidade.<br>
+Além dos filtros com as principais informações, usuário também poderá visualizar relatórios e gráficos sobre valorizações/desvalorizações, valores mínimos máximos e médios, realizar comparações de valores de imóveis e veículo. <br>
 
 ###3	MINI-MUNDO<br>
 Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
@@ -27,7 +29,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
 ####5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Edson Wevertom]
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 ####5.2 DECISÕES DE PROJETO
