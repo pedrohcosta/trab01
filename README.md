@@ -41,26 +41,21 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     b) justifique!
 
 ####5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    Descrição dos Dados
-
     bairro: Tabela que contém os nomes dos bairros dos classificados.
             idbairro: chave primária da tabela bairro.
-        name: campo que armazena o nome do bairro.
+            name: campo que armazena o nome do bairro.
 
     cambio: Tabela que contém os nomes dos cambios dos veiculo.
             idcambio: chave primária da tabela cambio.
-        name: campo que armazena o nome do cambio.
+            name: campo que armazena o nome do cambio.
 
     caracteristica: Tabela que contém os nomes dos caracteristicas dos imovel.
             idcaracteristica: chave primária da tabela caracteristica.
-        name: campo que armazena o nome da caracteristica.
+            name: campo que armazena o nome da caracteristica.
 
     categoria: Tabela que contém os nomes dos categoria dos classificados.
             idcategoria: chave primária da tabela categoria.
-        name: campo que armazena o nome da categoria.
-
+            name: campo que armazena o nome da categoria.
 
     classificado: Tabela que contém os atributos em comum entre todas as entidades (imovel/veiculo).
         idclassificado: chave primária da tabela classificado.
@@ -77,8 +72,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
     combustivel: Tabela que contém os nomes dos tipos de combustivel dos veiculos.
             idcombustivel: chave primária da tabela combustivel.
-        name: campo que armazena o nome do combustivel.
-
+            name: campo que armazena o nome do combustivel.
 
     imovel: Tabela que contém as informações do imovel.
         idimovel: chave primária da tabela imovel.
@@ -95,33 +89,30 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         idimovel: chave estrangeira da tabela imovel.
         idcaracteristica: chave estrangeira da tabela caracteristica.
 
-
     veiculo_opcional: Tabela que contém as informações dos opcionais do veiculo.
         idopcional: chave estrangeira da tabela opcional.
         idveiculo: chave estrangeira da tabela opcional.
 
     marca: Tabela que contém os nomes dos tipos de marcas dos veiculos.
             idmarca: chave primária da tabela marca.
-        name: campo que armazena o nome da marca.
+            name: campo que armazena o nome da marca.
 
     modelo: Tabela que contém os nomes dos tipos de modelos dos veiculos.
             idmodelo: chave primária da tabela modelo.
-        name: campo que armazena o nome do modelo.
+            name: campo que armazena o nome do modelo.
 
     municipio: Tabela que contém os nomes dos municipio dos classificados.
             idmunicipio: chave primária da tabela municipio.
-        name: campo que armazena o nome do municipio.
+            name: campo que armazena o nome do municipio.
 
     tipo: Tabela que contém os nomes dos tipos de imoveis.
             idtipo: chave primária da tabela tipo.
-        name: campo que armazena o nome do tipo.
-        idcategoria: chave estrangeira da tabela categoria.
-
+            name: campo que armazena o nome do tipo.
+            idcategoria: chave estrangeira da tabela categoria.
 
     opcinal: Tabela que contém os nomes dos opcionais dos veiculos.
             idopcinal: chave primária da tabela opcinal.
-        name: campo que armazena o nome da opcinal.
-
+            name: campo que armazena o nome da opcinal.
 
     veiculo: Tabela que contém as informações do veiculo.
         idveiculo: chave primária da tabela veiculo.
@@ -136,8 +127,10 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         quilomeragem: campo que armazena o quilometragem do veiculo.	
         quantidade_porta: campo que armazena o quantidade_porta do veiculo.	
 
-
 ###6	MODELO LÓGICO<br>
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/ModeloLogico.jpg?raw=true "Modelo Conceitual")
+
+
 ###7	MODELO FÍSICO<br>
 
 
