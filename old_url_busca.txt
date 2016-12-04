@@ -1,0 +1,23 @@
+Venda|Apartamentos|http://es.olx.com.br/imoveis/venda/apartamentos
+Venda|Casas|http://es.olx.com.br/imoveis/venda/casas
+
+Terrenos|Compra|http://es.olx.com.br/imoveis/terrenos/compra
+Terrenos|Aluguel|http://es.olx.com.br/imoveis/terrenos/aluguel
+
+Aluguel|Apartamentos|http://es.olx.com.br/imoveis/aluguel/apartamentos
+Aluguel|Casas|http://es.olx.com.br/imoveis/aluguel/casas
+Aluguel|Aluguel de Quartos|http://es.olx.com.br/imoveis/aluguel/aluguel-de-quartos
+
+Lojas Salas e Outros|Compra|http://es.olx.com.br/imoveis/lojas-salas-e-outros/compra
+Lojas Salas e Outros|Aluguel|http://es.olx.com.br/imoveis/lojas-salas-e-outros/aluguel
+
+Temporada|Apartamentos|http://es.olx.com.br/imoveis/temporada/apartamentos
+Temporada|Casas|http://es.olx.com.br/imoveis/temporada/casas
+Temporada|Quartos|http://es.olx.com.br/imoveis/temporada/quartos
+Temporada|Quartos compartilhados|http://es.olx.com.br/imoveis/temporada/quartos-compartilhados
+Temporada|Pousada|http://es.olx.com.br/imoveis/temporada/pousadas
+
+Lancamentos|Apartamentos|http://es.olx.com.br/imoveis/lancamentos/apartamentos
+Lancamentos|Casas|http://es.olx.com.br/imoveis/lancamentos/casas
+Lancamentos|Lojas e Salas Comerciais|http://es.olx.com.br/imoveis/lancamentos/lojas-e-salas-comerciais
+Lancamentos|Terrenos e Loteamentos| http://es.olx.com.br/imoveis/lancamentos/terrenos-e-loteamentos

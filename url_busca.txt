@@ -1,0 +1,2 @@
+8|http://es.olx.com.br/veiculos/carros
+7|http://es.olx.com.br/veiculos/motos

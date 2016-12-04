@@ -1,0 +1,155 @@
+CREATE TABLE bairro
+(
+  nome character varying(100),
+  idbairro serial NOT NULL,
+  CONSTRAINT bairro_pkey PRIMARY KEY (idbairro)
+);
+CREATE TABLE cambio
+(
+  idcambio serial NOT NULL,
+  nome character varying(100),
+  CONSTRAINT cambio_pkey PRIMARY KEY (idcambio)
+);
+CREATE TABLE caracteristica
+(
+  idcaracteristica serial NOT NULL,
+  nome character varying(100),
+  CONSTRAINT caracteristica_pkey PRIMARY KEY (idcaracteristica)
+);
+CREATE TABLE categoria
+(
+  idcategoria serial NOT NULL,
+  nome character varying(100),
+  CONSTRAINT categoria_pkey PRIMARY KEY (idcategoria)
+);
+CREATE TABLE classificado
+(
+  data character varying(10),
+  idclassificado serial NOT NULL,
+  titulo character varying(6000),
+  descricao character varying(6000),
+  valor numeric(10,0),
+  cep character varying(10),
+  latitude numeric(10,0),
+  longitude numeric(10,0),
+  codigo_anuncio character varying(20),
+  idbairro integer,
+  idmunicipio integer,
+  CONSTRAINT classificado_pkey PRIMARY KEY (idclassificado),
+  CONSTRAINT classificado_idbairro_fkey FOREIGN KEY (idbairro)
+      REFERENCES bairro (idbairro) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT classificado_idmunicipio_fkey FOREIGN KEY (idmunicipio)
+      REFERENCES municipio (idmunicipio) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+CREATE TABLE combustivel
+(
+  nome character varying(100),
+  idcombustivel serial NOT NULL,
+  CONSTRAINT combustivel_pkey PRIMARY KEY (idcombustivel)
+);
+CREATE TABLE imovel
+(
+  area_construida numeric(10,0),
+  area_util numeric(10,0),
+  vagas_garagem integer,
+  idimovel serial NOT NULL,
+  idtipo integer,
+  valor_condominio numeric(10,0),
+  quantidade_quartos integer,
+  iptu numeric(10,0),
+  oferta character varying(10),
+  idclassificado integer,
+  CONSTRAINT imovel_pkey PRIMARY KEY (idimovel),
+  CONSTRAINT imovel_idclassificado_fkey FOREIGN KEY (idclassificado)
+      REFERENCES classificado (idclassificado) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT imovel_idtipo_fkey FOREIGN KEY (idtipo)
+      REFERENCES tipo (idtipo) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+CREATE TABLE imovel_caracteristica
+(
+  idcaracteristica integer,
+  idimovel integer,
+  CONSTRAINT imovel_caracteristica_idcaracteristica_fkey FOREIGN KEY (idcaracteristica)
+      REFERENCES caracteristica (idcaracteristica) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE marca
+(
+  idmarca serial NOT NULL,
+  nome character varying(100),
+  CONSTRAINT marca_pkey PRIMARY KEY (idmarca)
+);
+CREATE TABLE modelo
+(
+  idmodelo serial NOT NULL,
+  nome character varying(100),
+  CONSTRAINT modelo_pkey PRIMARY KEY (idmodelo)
+);
+CREATE TABLE municipio
+(
+  idmunicipio serial NOT NULL,
+  nome character varying(100),
+  CONSTRAINT municipio_pkey PRIMARY KEY (idmunicipio)
+);
+
+CREATE TABLE opcional
+(
+  idopcional serial NOT NULL,
+  nome character varying(100),
+  CONSTRAINT opcional_pkey PRIMARY KEY (idopcional)
+);
+CREATE TABLE tipo
+(
+  idtipo serial NOT NULL,
+  idcategoria integer,
+  nome character varying(100),
+  url character varying(255),
+  CONSTRAINT tipo_pkey PRIMARY KEY (idtipo),
+  CONSTRAINT tipo_idcategoria_fkey FOREIGN KEY (idcategoria)
+      REFERENCES categoria (idcategoria) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+CREATE TABLE veiculo
+(
+  ano integer,
+  cilindrada numeric(10,0),
+  quantidade_porta integer,
+  idveiculo serial NOT NULL,
+  quilometragem numeric(10,0),
+  idclassificado integer,
+  idmodelo integer,
+  idmarca integer,
+  idcombustivel integer,
+  idcambio integer,
+  idcategoria integer,
+  CONSTRAINT veiculo_pkey PRIMARY KEY (idveiculo),
+  CONSTRAINT veiculo_idcambio_fkey FOREIGN KEY (idcambio)
+      REFERENCES cambio (idcambio) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT veiculo_idcategoria_fkey FOREIGN KEY (idcategoria)
+      REFERENCES categoria (idcategoria) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT veiculo_idcombustivel_fkey FOREIGN KEY (idcombustivel)
+      REFERENCES combustivel (idcombustivel) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT veiculo_idmarca_fkey FOREIGN KEY (idmarca)
+      REFERENCES marca (idmarca) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT veiculo_idmodelo_fkey FOREIGN KEY (idmodelo)
+      REFERENCES modelo (idmodelo) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+REATE TABLE veiculo_opcional
+(
+  idopcional integer,
+  idveiculo integer,
+  CONSTRAINT veiculo_opcional_idopcional_fkey FOREIGN KEY (idopcional)
+      REFERENCES opcional (idopcional) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+
