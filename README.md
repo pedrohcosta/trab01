@@ -274,6 +274,53 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     select * from bairro;
 ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/bairro.png?raw=true "Bairro")
 
+    select * from cambio;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/cambio.png?raw=true "Cambio")
+
+    select * from caracteristica;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/caracteristica.png?raw=true "Caracteristica")
+
+    select * from categoria;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/categoria.png?raw=true "Categoria")
+
+    select * from classificado;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/classificado.png?raw=true "Classificado")
+
+    select * from combustivel;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/combustivel.png?raw=true "Combustivel")
+
+    select * from imovel;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/imovel.png?raw=true "Imovel")
+
+    select * from imovel_caracteristica;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/imovel_caracteristica.png?raw=true "Imovel Caracteristica")
+
+    select * from marca;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/marca.png?raw=true "Marca")
+
+    select * from modelo;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/modelo.png?raw=true "Modelo")
+
+    select * from municipio;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/municipio.png?raw=true "Municipio")
+
+    select * from opcional;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/opcional.png?raw=true "Opcional")
+
+    select * from tipo;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/tipo.png?raw=true "Tipo")
+
+    select * from veiculo;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/veiculo.png?raw=true "Veiculo")
+
+    select * from veiculo_opcional;
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/veiculo_opcional.png?raw=true "Veiculo Opcional")
+
+
+
+
+
+
 ####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         Entrega até este ponto em 08/11/2016
 ####9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
