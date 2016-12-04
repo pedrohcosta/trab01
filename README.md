@@ -271,6 +271,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
+
+####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+
     select * from bairro;
 ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/bairro.png?raw=true "Bairro")
 
@@ -316,14 +319,17 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     select * from veiculo_opcional;
 ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/veiculo_opcional.png?raw=true "Veiculo Opcional")
 
-
-
-
-
-
-####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-        Entrega até este ponto em 08/11/2016
 ####9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
+
+    select * from imovel where vagas_garagem < 2
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/where_1.png?raw=true "")
+
+    select * from imovel where quantidade_quartos = 2
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/where_2.png?raw=true "")
+
+    select * from imovel inner join classificado ON imovel.idclassificado = classificado.idclassificado where valor < 100000
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/where_3.png?raw=true "")
+
 ####9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
 ####9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
 ####9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
