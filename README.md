@@ -128,7 +128,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         quantidade_porta: campo que armazena o quantidade_porta do veiculo.	
 
 ###6	MODELO LÓGICO<br>
-![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/ModeloLogico.jpg?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/ModeloLogico.jpg?raw=true "Modelo Lógico")
 
 
 ###7	MODELO FÍSICO<br>
@@ -271,6 +271,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
+    select * from bairro;
+    ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/bairro.jpg?raw=true "Bairro")
+
 ####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         Entrega até este ponto em 08/11/2016
 ####9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
