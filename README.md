@@ -272,7 +272,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
     select * from bairro;
-    ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/bairro.jpg?raw=true "Bairro")
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/bairro.png?raw=true "Bairro")
 
 ####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         Entrega até este ponto em 08/11/2016
