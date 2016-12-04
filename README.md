@@ -331,15 +331,143 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/where_3.png?raw=true "")
 
 ####9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
+
+    select * from imovel where vagas_garagem < 2 AND quantidade_quartos = 2
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/operadores_1.png?raw=true "")
+    
+    select * from veiculo where ano = 2010 AND quilometragem < 40000  AND quantidade_porta = 4
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/operadores_2.png?raw=true "")
+
+
 ####9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
+
+    select * from veiculo
+    inner join classificado ON veiculo.idclassificado = classificado.idclassificado
+    where titulo like '%toyota%'
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/like_1.png?raw=true "")
+
+    select * from opcional
+    inner join veiculo_opcional ON opcional.idopcional = veiculo_opcional.idopcional
+    inner join veiculo ON veiculo_opcional.idveiculo = veiculo.idveiculo
+    where opcional.nome like '%vidro elétrico%' or opcional.nome like '%trava elétrico%'
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/like_2.png?raw=true "")
+
+
+    select * from veiculo
+    inner join combustivel ON veiculo.idcombustivel= combustivel.idcombustivel
+    inner join categoria ON veiculo.idcategoria = categoria.idcategoria
+    WHERE combustivel.nome LIKE '%Gasolina%' AND categoria.nome LIKE '%Carro%'
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/like_3.png?raw=true "")
+
+
 ####9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+
+    delete from imovel;
+    delete from veiculo;
+    delete from cidade;
+
+    update caracteristica set nome = 'Ar condicionado' where nome like '%Ar condicionado%'
+    update opcional set nome = 'Ar condicionado' where nome like '%ar condicionado%'
+    update municipio set nome = 'Teste' where idmunicipio = 1
+
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/delete_update.png?raw=true "")
+
+
 ####9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
-        Entrega até este ponto em 22/11/2016
+
+    SELECT * FROM veiculo
+    INNER JOIN modelo ON veiculo.idmodelo = modelo.idmodelo
+    INNER JOIN marca ON veiculo.idmarca = marca.idmarca
+    INNER JOIN combustivel ON veiculo.idcombustivel = combustivel.idcombustivel
+    INNER JOIN cambio ON veiculo.idcambio = cambio.idcambio
+    INNER JOIN categoria ON veiculo.idcategoria = categoria.idcategoria
+    INNER JOIN classificado ON veiculo.idclassificado = classificado.idclassificado
+    INNER JOIN bairro ON classificado.idbairro = bairro.idbairro
+    INNER JOIN municipio ON classificado.idbairro = municipio.idmunicipio
+    LIMIT 10
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/juncao_ordenacao_1.png?raw=true "")
+
+    SELECT * FROM imovel
+    INNER JOIN tipo ON imovel.idtipo = tipo.idtipo
+    INNER JOIN classificado ON imovel.idclassificado = classificado.idclassificado
+    INNER JOIN bairro ON classificado.idbairro = bairro.idbairro
+    INNER JOIN municipio ON classificado.idbairro = municipio.idmunicipio
+    LIMIT 10
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/juncao_ordenacao_2.png?raw=true "")
+
+    select * from opcional
+    inner join veiculo_opcional ON opcional.idopcional = veiculo_opcional.idopcional
+    inner join veiculo ON veiculo_opcional.idveiculo = veiculo.idveiculo
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/juncao_ordenacao_3.png?raw=true "")
+
+    select * from caracteristica
+    inner join imovel_caracteristica ON caracteristica.idcaracteristica = imovel_caracteristica.idcaracteristica
+    inner join imovel ON imovel_caracteristica.idimovel = imovel.idimovel
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/juncao_ordenacao_4.png?raw=true "")
+
+        
 ####9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
+
+    SELECT bairro.nome, count(*) AS total  FROM imovel
+    INNER JOIN classificado ON imovel.idclassificado = classificado.idclassificado
+    INNER JOIN bairro ON classificado.idbairro = bairro.idbairro
+    GROUP BY bairro.nome
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/groupby_1.png?raw=true "")
+
+    SELECT municipio.nome, count(*) AS total FROM imovel
+    INNER JOIN classificado ON imovel.idclassificado = classificado.idclassificado
+    INNER JOIN municipio ON classificado.idbairro = municipio.idmunicipio
+    GROUP BY municipio.nome
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/groupby_2.png?raw=true "")
+
+    SELECT classificado.cep, count(*) AS total FROM imovel
+    INNER JOIN classificado ON imovel.idclassificado = classificado.idclassificado
+    GROUP BY classificado.cep
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/groupby_3.png?raw=true "")
+
+    SELECT bairro.nome, AVG(valor) AS total  FROM imovel
+    INNER JOIN classificado ON imovel.idclassificado = classificado.idclassificado
+    INNER JOIN bairro ON classificado.idbairro = bairro.idbairro
+    where idtipo = 2
+    GROUP BY bairro.nome
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/groupby_4.png?raw=true "")
+
+    SELECT marca.nome, veiculo.ano, count(*)  FROM veiculo
+    INNER JOIN classificado ON veiculo.idclassificado = classificado.idclassificado
+    INNER JOIN marca ON veiculo.idmarca = marca.idmarca
+    GROUP BY marca.nome, veiculo.ano order by 3 desc
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/groupby_5.png?raw=true "")
+
+
 ####9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 ####9.9	CONSULTAS COM SELF JOIN E VIEW (Todas Possíveis)<br>
 ####9.10	SUBCONSULTAS (Mínimo 3)<br>
-        Entrega até este ponto em 29/11/2016
+
+    select * from veiculo where idveiculo IN (select idveiculo from veiculo where quantidade_porta < 5000)
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/subconsulta_1.png?raw=true "")
+
+    select * from veiculo where idveiculo 
+    IN (select idveiculo from veiculo where quantidade_porta = 4 and quilometragem > 50000)
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/subconsulta_2.png?raw=true "")
+
+    select 
+    (select avg(valor) media from veiculo 
+    inner join classificado on veiculo.idclassificado = classificado.idclassificado
+    inner join bairro on classificado.idbairro = bairro.idbairro
+    where valor <> 0 and ano > 2010 and  bairro.nome like '%Serra%')
+    ,
+    (select min(valor) menor from veiculo 
+    inner join classificado on veiculo.idclassificado = classificado.idclassificado
+    inner join bairro on classificado.idbairro = bairro.idbairro
+    where valor <> 0 and ano > 2010 and  bairro.nome like '%Serra%')
+    ,
+    (select max(valor) maior from veiculo 
+    inner join classificado on veiculo.idclassificado = classificado.idclassificado
+    inner join bairro on classificado.idbairro = bairro.idbairro
+    where valor <> 0 and ano > 2010 and  bairro.nome like '%Serra%')
+![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/prints/subconsulta_3.png?raw=true "")
+
+
 ###10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 ###11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 ###12  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
