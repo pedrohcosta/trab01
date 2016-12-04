@@ -133,6 +133,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ###7	MODELO FÍSICO<br>
 
+
     CREATE TABLE classificado (
     data VARCHAR(10),
     longitude NUMERIC(10),
@@ -141,25 +142,25 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     valor NUMERIC(10),
     descricao VARCHAR(255),
     latitude NUMERIC(10),
-    idclassificado INTEGER PRIMARY KEY,
+    idclassificado SERIAL PRIMARY KEY,
     titulo VARCHAR(200),
     idbairro INTEGER,
     idmunicipio INTEGER
     )
 
     CREATE TABLE municipio (
-    idmunicipio INTEGER PRIMARY KEY,
+    idmunicipio SERIAL PRIMARY KEY,
     nome VARCHAR(100)
     )
 
     CREATE TABLE bairro (
-    idbairro INTEGER PRIMARY KEY,
+    idbairro SERIAL PRIMARY KEY,
     nome VARCHAR(100)
     )
 
     CREATE TABLE tipo (
     nome VARCHAR(100),
-    idtipo INTEGER PRIMARY KEY,
+    idtipo SERIAL PRIMARY KEY,
     idcategoria INTEGER
     )
 
@@ -169,13 +170,13 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     )
 
     CREATE TABLE caracteristica (
-    idcaracteristica INTEGER PRIMARY KEY,
+    idcaracteristica SERIAL PRIMARY KEY,
     nome VARCHAR(100)
     )
 
     CREATE TABLE imovel (
     vagas_garagem INTEGER,
-    idimovel INTEGER PRIMARY KEY,
+    idimovel SERIAL PRIMARY KEY,
     iptu NUMERIC(10),
     area_construida NUMERIC(10),
     valor_condominio NUMERIC(10),
@@ -189,7 +190,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     )
 
     CREATE TABLE opcional (
-    idopcional INTEGER PRIMARY KEY,
+    idopcional SERIAL PRIMARY KEY,
     nome VARCHAR(100)
     )
 
@@ -201,32 +202,32 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
     CREATE TABLE marca (
     nome VARCHAR(100),
-    idmarca INTEGER PRIMARY KEY
+    idmarca SERIAL PRIMARY KEY
     )
 
     CREATE TABLE modelo (
-    idmodelo INTEGER PRIMARY KEY,
+    idmodelo SERIAL PRIMARY KEY,
     nome VARCHAR(100)
     )
 
     CREATE TABLE combustivel (
     nome VARCHAR(100),
-    idcombustivel INTEGER PRIMARY KEY
+    idcombustivel SERIAL PRIMARY KEY
     )
 
     CREATE TABLE cambio (
-    idcambio INTEGER PRIMARY KEY,
+    idcambio SERIAL PRIMARY KEY,
     nome VARCHAR(100)
     )
 
     CREATE TABLE categoria (
-    idcategoria INTEGER PRIMARY KEY,
+    idcategoria SERIAL PRIMARY KEY,
     nome VARCHAR(100)
     )
 
     CREATE TABLE veiculo (
     quilometragem NUMERIC(10),
-    idveiculo INTEGER PRIMARY KEY,
+    idveiculo SERIAL PRIMARY KEY,
     cilindrada NUMERIC(10),
     ano INTEGER,
     quantidade_porta INTEGER,
@@ -249,7 +250,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     ALTER TABLE tipo ADD FOREIGN KEY(idcategoria) REFERENCES categoria (idcategoria)
     ALTER TABLE imovel_caracteristica ADD FOREIGN KEY(idcaracteristica) REFERENCES caracteristica (idcaracteristica)
     ALTER TABLE imovel_caracteristica ADD FOREIGN KEY(idimovel) REFERENCES imovel (idimovel)
-    ALTER TABLE veiculo_opcional ADD FOREIGN KEY(idveiculo) REFERENCES veiculo (idveiculo)        
+    ALTER TABLE veiculo_opcional ADD FOREIGN KEY(idveiculo) REFERENCES veiculo (idveiculo)      
      
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ####8.1 DETALHAMENTO DAS INFORMAÇÕES
