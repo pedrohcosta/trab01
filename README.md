@@ -32,7 +32,7 @@ Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
 
 ####5.2 DECISÕES DE PROJETO
     a) Usamos o esquema de herança suportada pelo postgres na tabela classificado agruando as informações comum, fazendo imovel e veiculo herdar.
-    b) O grande número de tabelas criadas foi para o banco ficar normalizado. 
+    b) O grande número de tabelas criadas foi para o banco ficar normalizado.
 
 ####5.3 DESCRIÇÃO DOS DADOS 
     bairro: Tabela que contém os nomes dos bairros dos classificados.
