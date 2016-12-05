@@ -16,12 +16,10 @@ Além dos filtros com as principais informações, usuário também poderá visu
 Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
 
 ###4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
+![Alt text](https://github.com/discipbd1/trab01/blob/master/mockups.png?raw=true "Title")
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-
+A apresentação completa pode ser [aqui](https://github.com/pedrohcosta/trab01/blob/master/mockups.pdf).
 
 ###5	MODELO CONCEITUAL<br>
     5.1 NOTACAO ENTIDADE RELACIONAMENTO
