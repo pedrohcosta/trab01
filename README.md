@@ -33,12 +33,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 ####5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
+    a) Usamos o esquema de herança suportada pelo postgres na tabela classificado agruando as informações comum, fazendo imovel e veiculo herdar.
+    b) O grande número de tabelas criado foi para o banco ficar normalizado. 
 
 ####5.3 DESCRIÇÃO DOS DADOS 
     bairro: Tabela que contém os nomes dos bairros dos classificados.
