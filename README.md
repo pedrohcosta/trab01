@@ -34,7 +34,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ####5.2 DECISÕES DE PROJETO
     a) Usamos o esquema de herança suportada pelo postgres na tabela classificado agruando as informações comum, fazendo imovel e veiculo herdar.
-    b) O grande número de tabelas criado foi para o banco ficar normalizado. 
+    b) O grande número de tabelas criadas foi para o banco ficar normalizado. 
 
 ####5.3 DESCRIÇÃO DOS DADOS 
     bairro: Tabela que contém os nomes dos bairros dos classificados.
@@ -251,11 +251,20 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ####8.1 DETALHAMENTO DAS INFORMAÇÕES
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
-        Referenciar todas as fontes referentes a :
-        a) obtenção dos dados
-        b) obtenção de códigos reutilizados
-        c) fontes de estudo para desenvolvimento do projeto
-
+        
+        Bibliotecas python utilizadas:
+        
+        a)BeautifulSoup (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+        b)Requests (http://docs.python-requests.org/en/master/)
+        c)Psycopg2 (http://initd.org/psycopg/)
+        
+        Site para extração das informações:
+        
+        a) OLX (http://www.olx.com.br/)
+        
+        Códigos utilizados:
+        
+        a) Os códigos python utilizados para extração das informações foram podem encontrado [aqui](https://github.com/pedrohcosta/trab01/blob/master/codigos/). 
 
 ####8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
