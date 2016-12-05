@@ -17,7 +17,7 @@ Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
 
 ###4	RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-    A apresentação completa pode ser encontrada [aqui](https://github.com/pedrohcosta/trab01/blob/master/mockups.pdf).
+A apresentação completa pode ser encontrada [aqui](https://github.com/pedrohcosta/trab01/blob/master/mockups.pdf).
 
 ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/mockups.png?raw=true "Title")
 
