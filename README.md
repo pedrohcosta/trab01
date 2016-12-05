@@ -27,8 +27,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     5.1 NOTACAO ENTIDADE RELACIONAMENTO
 ![Alt text](https://github.com/pedrohcosta/trab01/blob/master/imagens/ModeloConteitual.jpg?raw=true "Modelo Conceitual")
     
-    5.2 NOTACAO UML (Caso esteja fazendo a disciplina de analise)
-
+    
 ####5.1 Validação do Modelo Conceitual
     [Grupo01]: [Edson Wevertom]
     [Grupo02]: [Nomes dos que participaram na avaliação]
