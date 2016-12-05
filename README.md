@@ -1,5 +1,6 @@
-# TRABALHO 01
-Trabalho BD1
+# TRABALHO BANCO DE DADOS
+
+![Alt text](https://github.com/discipbd1/trab01/blob/master/logo_trabalho_bd.png.png?raw=true "Title")
 
 #Sumário
 
