@@ -11,25 +11,25 @@ cep VARCHAR(10),
 valor NUMERIC(10),
 descricao VARCHAR(255),
 latitude NUMERIC(10),
-idclassificado SERIAL PRIMARY KEY,
+idclassificado INTEGER PRIMARY KEY,
 titulo VARCHAR(200),
 idbairro INTEGER,
 idmunicipio INTEGER
 )
 
 CREATE TABLE municipio (
-idmunicipio SERIAL PRIMARY KEY,
+idmunicipio INTEGER PRIMARY KEY,
 nome VARCHAR(100)
 )
 
 CREATE TABLE bairro (
-idbairro SERIAL PRIMARY KEY,
+idbairro INTEGER PRIMARY KEY,
 nome VARCHAR(100)
 )
 
 CREATE TABLE tipo (
 nome VARCHAR(100),
-idtipo SERIAL PRIMARY KEY,
+idtipo INTEGER PRIMARY KEY,
 idcategoria INTEGER
 )
 
@@ -39,13 +39,13 @@ idimovel INTEGER
 )
 
 CREATE TABLE caracteristica (
-idcaracteristica SERIAL PRIMARY KEY,
+idcaracteristica INTEGER PRIMARY KEY,
 nome VARCHAR(100)
 )
 
 CREATE TABLE imovel (
 vagas_garagem INTEGER,
-idimovel SERIAL PRIMARY KEY,
+idimovel INTEGER PRIMARY KEY,
 iptu NUMERIC(10),
 area_construida NUMERIC(10),
 valor_condominio NUMERIC(10),
@@ -59,7 +59,7 @@ FOREIGN KEY(idtipo) REFERENCES tipo (idtipo)
 )
 
 CREATE TABLE opcional (
-idopcional SERIAL PRIMARY KEY,
+idopcional INTEGER PRIMARY KEY,
 nome VARCHAR(100)
 )
 
@@ -71,32 +71,32 @@ FOREIGN KEY(idopcional) REFERENCES opcional (idopcional)
 
 CREATE TABLE marca (
 nome VARCHAR(100),
-idmarca SERIAL PRIMARY KEY
+idmarca INTEGER PRIMARY KEY
 )
 
 CREATE TABLE modelo (
-idmodelo SERIAL PRIMARY KEY,
+idmodelo INTEGER PRIMARY KEY,
 nome VARCHAR(100)
 )
 
 CREATE TABLE combustivel (
 nome VARCHAR(100),
-idcombustivel SERIAL PRIMARY KEY
+idcombustivel INTEGER PRIMARY KEY
 )
 
 CREATE TABLE cambio (
-idcambio SERIAL PRIMARY KEY,
+idcambio INTEGER PRIMARY KEY,
 nome VARCHAR(100)
 )
 
 CREATE TABLE categoria (
-idcategoria SERIAL PRIMARY KEY,
+idcategoria INTEGER PRIMARY KEY,
 nome VARCHAR(100)
 )
 
 CREATE TABLE veiculo (
 quilometragem NUMERIC(10),
-idveiculo SERIAL PRIMARY KEY,
+idveiculo INTEGER PRIMARY KEY,
 cilindrada NUMERIC(10),
 ano INTEGER,
 quantidade_porta INTEGER,
