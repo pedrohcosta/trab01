@@ -248,21 +248,21 @@ A apresentação completa pode ser encontrada [aqui](https://github.com/pedrohco
      
 ###8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ####8.1 DETALHAMENTO DAS INFORMAÇÕES
-        Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
+Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
         
-        Bibliotecas python utilizadas:
+Bibliotecas python utilizadas:
         
-        a)BeautifulSoup (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-        b)Requests (http://docs.python-requests.org/en/master/)
-        c)Psycopg2 (http://initd.org/psycopg/)
+a)BeautifulSoup [link](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+b)Requests [link](http://docs.python-requests.org/en/master/)
+c)Psycopg2 [link](http://initd.org/psycopg/)
         
-        Site para extração das informações:
+Site para extração das informações:
         
-        a) OLX (http://www.olx.com.br/)
+a) OLX [link](http://www.olx.com.br/)
         
-        Códigos utilizados:
+Códigos utilizados:
         
-        a) Os códigos python utilizados para extração das informações foram podem encontrado [aqui](https://github.com/pedrohcosta/trab01/blob/master/codigos/). 
+a) Os códigos python utilizados para extração das informações foram podem encontrado [aqui](https://github.com/pedrohcosta/trab01/blob/master/codigos/). 
 
 ####8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
