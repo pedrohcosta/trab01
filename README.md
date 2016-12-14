@@ -267,7 +267,7 @@ a) Os códigos python utilizados para extração das informações foram podem e
 ####8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
 
 O script de inserção utilizando pode ser encontrado [aqui](https://github.com/pedrohcosta/trab01/tree/master/script_sql/insert.sql). <br/>
-O backup do banco pode ser encontrado [aqui](https://github.com/pedrohcosta/trab01/tree/master/script_sql/banco.sql).
+O backup do banco pode ser encontrado [aqui](https://github.com/pedrohcosta/trab01/tree/master/script_sql/banco.sql.zip).
 
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
