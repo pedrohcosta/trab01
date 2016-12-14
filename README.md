@@ -252,9 +252,9 @@ Detalhamento sobre as informações e processo de obtenção ou geração dos da
         
 Bibliotecas python utilizadas:
         
-a)BeautifulSoup [link](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-b)Requests [link](http://docs.python-requests.org/en/master/)
-c)Psycopg2 [link](http://initd.org/psycopg/)
+a)BeautifulSoup [link](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) <br/>
+b)Requests [link](http://docs.python-requests.org/en/master/) <br/>
+c)Psycopg2 [link](http://initd.org/psycopg/) <br/>
         
 Site para extração das informações:
         
