@@ -474,14 +474,16 @@ O código sql das consultas pode ser obtido [aqui](https://github.com/pedrohcost
 
 A apresentação pode ser encontrada  [aqui](https://github.com/pedrohcosta/trab01/blob/master/apresentacao.pdf)
 
-###11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
-
-    (1) Falta de tempo;
-
-###12	Extração Tweet<br>
+###11	Extração Tweet<br>
 
 A apresentação pode ser encontrada [aqui](https://github.com/pedrohcosta/trab01/blob/master/extracao_tweet/Apresenta%C3%A7%C3%A3o.pdf)
 
 Códigos utilizados encontrada [aqui](https://github.com/pedrohcosta/trab01/blob/master/extracao_tweet/)
 
 Bakcup do banco de dados [aqui](https://github.com/pedrohcosta/trab01/blob/master/extracao_tweet/backup_banco.sql)
+
+
+###12	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
+
+    (1) Falta de tempo;
+
