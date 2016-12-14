@@ -5,8 +5,8 @@
 #Sumário
 
 ###1	COMPONENTES<br>
-Pedro Henrique<br>
-Romildo Costa<br>
+Pedro Henrique pedrohenriquecruzcosta@gmail.com<br>
+Romildo Costa romer.c.silva@gmail.com<br>
 
 ###2	INTRODUÇÃO E MOTIVAÇAO<br>
 O objetivo do nosso sistema e realizar crawling o site de classificados (OLX, ZAP e etc) para extração de informações de imóveis (bairro, município, valor e etc.) e veículos (bairro, município, valor, modelo, ano e etc.) disponibilizando para usuário varios filtro de informações históricas com maior facilidade.<br>
@@ -28,7 +28,7 @@ A apresentação completa pode ser encontrada [aqui](https://github.com/pedrohco
     
 ####5.1 Validação do Modelo Conceitual
     [Grupo01]: [Edson Wevertom]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo02]: [Cassiano]
 
 ####5.2 DECISÕES DE PROJETO
     a) Usamos o esquema de herança suportada pelo postgres na tabela classificado agruando as informações comum, fazendo imovel e veiculo herdar.
