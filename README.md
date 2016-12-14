@@ -265,17 +265,14 @@ Códigos utilizados:
 a) Os códigos python utilizados para extração das informações foram podem encontrado [aqui](https://github.com/pedrohcosta/trab01/blob/master/codigos/). 
 
 ####8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-        a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
-        b) inclusão das instruções de inserção dos dados nas referidas tabelas
-        c) inclusão das instruções para execução de outros procedimentos necessários
 
-
-        Entrega até este ponto em 01/11/2016
+O script de inserção utilizando pode ser encontrado [aqui](https://github.com/pedrohcosta/trab01/tree/master/script_sql/script_insert.sql.sql). 
+O backup do banco pode ser encontrado [aqui](https://github.com/pedrohcosta/trab01/tree/master/script_sql/banco.sql).
 
 
 ###9	TABELAS E PRINCIPAIS CONSULTAS<br>
 
-O código sql das consultas pode ser obtido [aqui](https://github.com/pedrohcosta/trab01/blob/master/query.sql)
+O código sql das consultas pode ser obtido [aqui](https://github.com/pedrohcosta/trab01/tree/master/script_sql/query.sql)
 
 ####9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
